@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>300x600</title>
+
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+</head>
+
+<body>
+  <monet-integrator dynamic-feed-sheet-name="" backup="./backup.json"></monet-integrator>
+
+  <div class="preloader-spinner"></div>
+
+  <div id="banner">
+
+    <netflix-text class="pedigree" data-dynamic-key="Pedigree"></netflix-text>
+    <netflix-img class="titleTreatment" data-dynamic-key="Title_Treatment"></netflix-img>
+    <netflix-brand-logo width="120" height="30"></netflix-brand-logo>
+    <netflix-text class="supercutTuneIn" data-dynamic-key="Supercut_Tune_In"></netflix-text>
+    <netflix-text class="tuneIn" data-dynamic-key="Tune_In"></netflix-text>
+    <netflix-flushed-ribbon width="300" height="600"></netflix-flushed-ribbon>
+
+    <netflix-cta arrow></netflix-cta>
+
+    <div class="mainExit"></div>
+
+    <netflix-video
+      width="300"
+      height="600"
+      data-dynamic-key="Supercut"
+      close-color-1="#000"
+      close-color-2="#fff"
+      hideOnComplete="true"
+      muted="true">
+    </netflix-video>
+  </div>
+  <netflix-fonts></netflix-fonts>
+
+  <script src="https://ae.nflximg.net/monet/scripts/monet.min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_2.0.1_min.js"></script>
+</body>
+</html>

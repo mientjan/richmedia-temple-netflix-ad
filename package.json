@@ -1,0 +1,30 @@
+{
+  "name": "netflix-banner",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "",
+  "author": "",
+  "engines": {
+    "npm": ">= 8.0.0"
+  },
+  "scripts": {
+    "dev": "node ./node_modules/@mediamonks/richmedia-temple-server/dev.js",
+    "build": "node ./node_modules/@mediamonks/richmedia-temple-server/build.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@mediamonks/richmedia-temple-server": "^1.1.7",
+    "@mediamonks/temple": "^1.1.7",
+    "@netflixadseng/wc-netflix-fonts": "latest",
+    "@netflixadseng/wc-monet-integrator": "latest",
+    "@netflixadseng/wc-netflix-preloader": "",
+    "@netflixadseng/wc-netflix-ratings-bug": "",
+    "@netflixadseng/wc-netflix-img": "",
+    "@netflixadseng/wc-netflix-cta": "",
+    "@netflixadseng/wc-netflix-flushed-ribbon": "",
+    "@netflixadseng/wc-netflix-video": "",
+    "@netflixadseng/wc-netflix-brand-logo": "",
+    "@netflixadseng/wc-netflix-text": "",
+    "@netflixadseng/wc-netflix-supercut": ""
+  }
+}
