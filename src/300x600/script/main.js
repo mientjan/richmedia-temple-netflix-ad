@@ -50,14 +50,13 @@ class Banner extends Entity {
     this.domNetflixBrandLogo = document.body.querySelector('netflix-brand-logo');
     this.domnNetflixCta = document.body.querySelector('netflix-cta');
     this.domMainExit = document.body.querySelector('.mainExit');
+    this.domSupercutOverlay = document.body.querySelector('.supercutOverlay');
 
     this.domMainExit.addEventListener('click', this.handleMainClick);
     this.domMainExit.addEventListener('mouseover', this.handleRollOver);
     this.domMainExit.addEventListener('mouseout', this.handleRollOut);
 
-    if (true) {
-      this.playIntroAnimation();
-    }
+    this.playIntroAnimation();
   }
 
   handleMainClick = () => {
@@ -95,11 +94,14 @@ class Banner extends Entity {
     this.domNetflixVideo.addEventListener('video-complete', e => {
       this.playMainAnimation();
 
+
       this.domNetflixBrandLogo.play();
     });
   }
 
-  playMainAnimation() {}
+  playMainAnimation() {
+    this.domSupercutOverlay.classList.add('hide');
+  }
 
   getRibonTimeline() {
     const tl = new TimelineLite();
